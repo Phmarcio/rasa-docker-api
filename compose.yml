@@ -1,0 +1,16 @@
+version: '3.6'
+
+networks:
+  rasa-api-network:
+
+services:
+  rasa-bot:
+    image: ph/rasa-bot-api:1.0
+#    command: train nlu
+    volumes:
+      - ./bot:/app
+    ports:
+      - 5000:8080
+    networks:
+      - rasa-api-network
+   
