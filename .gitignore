@@ -1,0 +1,15 @@
+Pipfile
+bot/.rasa/
+bot/models/
+*.log
+.idea/
+.vscode/
+*.pyc
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+.venv
+dist/
+build/
+*.egg-info/
